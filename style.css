@@ -335,6 +335,22 @@ nav {
 }
 /* eksperience */
 
+/* Project */
+.nav-project .nav-item .active {
+    background-color: #FFC804;
+    color: #000C17;
+    border-radius: 10px;
+}
+.nav-project .nav-item button {
+    color: #fff;
+}
+.tab-content .card {
+    height: 380px;
+    font-size: 14px;
+    border-radius: 15px;
+}
+
+/* Project */
 /* PORTFOLIO */
 .portfolio .bi-file-earmark-code, .bi-file-earmark-easel{
     color: #08A98C;
