@@ -5,12 +5,20 @@ body {
     font-family: 'Bree Serif', serif;
     overflow-x: hidden;
     scroll-behavior: smooth;
+    width: 100%;
+    margin: 0px;
+    padding: 0px;
 }
 @media only screen and (max-width: 600px){
 	body {
-        overflow-x: hidden;
+        padding: 0px;
+        width: 0px;
+        width: 100%;
     }
 
+}
+.bg-white {
+    background-color: #fff;
 }
 .text-warning, .btn-warning {
     color: #FFC804;
@@ -95,7 +103,7 @@ nav {
     font-family: 'Work Sans', sans-serif;
     font-weight: lighter;
 }
-.kontak .btn-0 {
+/* .kontak .btn-0 {
     margin-left: 10px;
     padding: 7px 15px 7px 15px;
     border-radius: 14px;
@@ -103,7 +111,7 @@ nav {
     background-color: transparent;
     color: #fff;
     border: 2px solid #08A98C;
-}
+} */
 .kontak {
     margin-top: 20px;
 }
@@ -143,7 +151,6 @@ nav {
 #header img {
     width: 60%;
     display: block;
-    margin: 10px auto;
 }
 
 /* HEADER */
@@ -198,12 +205,7 @@ nav {
     list-style: none;
     display: flex;
 }
-.aboutMe .personal {
-    background-image: url(media/bg-personal.png);
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-position: center;
-}
+
 .aboutMe .personal img {
     width: 100%;
 }
@@ -307,10 +309,16 @@ nav {
     }
 
 }
-
+.eksperience .ex-01 {
+    background-image: url(media/digitalent2.png);
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
 .eksperience .card {
-    background-color: #152431;
     margin-bottom: 10px;
+}
+.eksperience .card-body {
+    
 }
 .eksperience .line {
     border-bottom: 5px solid #08A98C;
@@ -348,6 +356,17 @@ nav {
     height: 380px;
     font-size: 14px;
     border-radius: 15px;
+}
+@media only screen and (max-width: 600px){
+    .tab-content .card {
+        height: auto;
+        font-size: 14px;
+        border-radius: 15px;
+    }
+}
+.tab-content .card-footer {
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
 }
 
 /* Project */
