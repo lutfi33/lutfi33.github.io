@@ -142,10 +142,10 @@ nav {
     margin-top: 70px;
     color: #fff;
 }
-#header h2 {
+#header h2,h1,h3 {
     color: #fff;
 }
-#header h6 {
+#header h5 {
     color: rgb(8, 169, 140);
 }
 #header img {
@@ -164,7 +164,7 @@ nav {
     text-shadow: 1px 0px 0px #fff;
 }
 .profile {
-    background-image: url(media/laptop.jpg);
+    background-image: url(media/laptop_terbaru.jpg);
     background-attachment: fixed;
 	background-size: cover;
 	background-position: 0 -80;
@@ -183,7 +183,7 @@ nav {
     font-family: 'Work Sans', sans-serif;
 }
 .profile .quote {
-    margin-top: 100px;
+    margin: 100px auto;
 }
 /* PROFILE */
 
