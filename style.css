@@ -1,13 +1,10 @@
 
 body {
-    background-color: #000C17;
-    background-image: url(media/bg01.png);
+    background-color: #eeeeee;
     font-family: 'Bree Serif', serif;
     overflow-x: hidden;
     scroll-behavior: smooth;
-    width: 100%;
-    margin: 0px;
-    padding: 0px;
+
 }
 @media only screen and (max-width: 600px){
 	body {
@@ -16,6 +13,7 @@ body {
         width: 100%;
     }
 
+
 }
 .bg-white {
     background-color: #fff;
@@ -23,8 +21,18 @@ body {
 .text-warning, .btn-warning {
     color: #FFC804;
 }
+.bg-tea {
+    background-color: #b6e7dd;
+}
 
+.border-left {
+    border-left: 3px solid #FFC804;
+}
 
+.my-6 {
+    margin-top: 110px;
+    margin-bottom: 110px;
+}
 /* BUTTON */
 .btn-dark {
     background-color: #08A98C;
@@ -124,17 +132,19 @@ nav {
 
 /* HEADER */
 
-#header .container{
-    height: 500px;
-}
+
 @media only screen and (max-width: 600px){
 	#header .container{
         height: auto;
     }
+    .header-img {
+        width: 100%;
+        display: block;
+    }
 
 }
 #header p {
-    color: #fff;
+    color: #707070;
     font-family: 'Work Sans', sans-serif;
     font-size: 16px;
 }
@@ -142,14 +152,12 @@ nav {
     margin-top: 70px;
     color: #fff;
 }
-#header h2,h1,h3 {
-    color: #fff;
-}
+
 #header h5 {
     color: rgb(8, 169, 140);
 }
-#header img {
-    width: 60%;
+.header-img  {
+    width: 200px;
     display: block;
 }
 
@@ -350,7 +358,7 @@ nav {
     border-radius: 10px;
 }
 .nav-project .nav-item button {
-    color: #fff;
+    color: #353535;
 }
 .tab-content .card {
     height: 380px;
