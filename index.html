@@ -73,17 +73,26 @@
 <section id="header" class="header">
     <div class="container">
         <div class="row">
-            <div class="col-md-12 mt-2 text-center">
-              <h2>Hello, Hai👋</h2>
+            <div class="col-md-6 m-auto order-2 profile-landing">
+              <h1>Hello, Hai👋</h1>
               <h5>I'm Lutfi Hermansah</h5>
-              <img class="img-fluid m-auto my-3 header-img" src="media/profile-lutfi.png" alt="profil.png">
+              
               <h6>Design Graphic | Front-end Web Developer</h6>
               <p>Welcome to Lutfi Hermansah portfolio, I invite you to explore the project site that I created.</p>
               <div class="row">
                 <div class="btn-view">
-                  <a class="btn btn-warning text-dark mb-3 mt-3" href="#profile"><i class="bi bi-person-badge">&ensp;</i>Here Me</a>
+                  <button class="cta">
+                    <span>Here me</span>
+                    <svg viewBox="0 0 13 10" height="10px" width="15px">
+                      <path d="M1,5 L11,5"></path>
+                      <polyline points="8 1 12 5 8 9"></polyline>
+                    </svg>
+                  </button>
                 </div>
               </div>
+            </div>
+            <div class="col-md-6 order-1">
+              <img class="img-fluid m-auto my-3 header-img" src="media/landing_lutfi2.png" alt="profil">
             </div>
         </div>
       </div>
@@ -121,36 +130,53 @@
       <!-- content -->
     <div class="row content-skill mt-5 text-center">
       <div class="col-md-4" data-aos="fade-up" data-aos-duration="2000" data-aos-delay="600">
-        <div class="card">
-          <img src="media/skill1.png" alt="...">
+        <div class="card-2">
+          <div class="bg">
+            <img src="media/skill1.png" class="mt-2" alt="icon">
           <div class="card-body">
-            <h5 class="card-title text-center ">UI/UX Design</h5>
-            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+            <h5 class="card-title text-center text-dark">UI/UX Design</h5>
+            <p class="card-text text-dark">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
           </div>
+          </div>
+          <div class="blob"></div>
         </div>
       </div>
       <div class="col-md-4" data-aos="fade-up" data-aos-duration="2000" data-aos-delay="800">
-        <div class="card">
-          <img src="media/skill design.png" alt="...">
+        <div class="card-2">
+          <div class="bg">
+            <img src="media/skill1.png" class="mt-2" alt="icon">
           <div class="card-body">
-            <h5 class="card-title text-center">Graphic Designer</h5>
-            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+            <h5 class="card-title text-center text-dark">UI/UX Design</h5>
+            <p class="card-text text-dark">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
           </div>
+          </div>
+          <div class="blob"></div>
         </div>
       </div>
       <div class="col-md-4" data-aos="fade-up" data-aos-duration="2000" data-aos-delay="1000">
-        <div class="card">
-          <img src="media/skill frontend.png" alt="...">
+        <div class="card-2">
+          <div class="bg">
+            <img src="media/skill1.png" class="mt-2" alt="icon">
           <div class="card-body">
-            <h5 class="card-title text-center">Front-End Web Developer</h5>
-            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+            <h5 class="card-title text-center text-dark">UI/UX Design</h5>
+            <p class="card-text text-dark">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
           </div>
+          </div>
+          <div class="blob"></div>
         </div>
       </div>
     </div>
-    <div class="row">
+    <div class="row mt-5">
       <div class="col-12 text-center">
-        <a class="btn btn-warning text-dark mb-3 mt-3" href="#profile"><i class="bi bi-person-badge">&ensp;</i>Go to services</a>
+        <div class="btn-view">
+          <button class="cta">
+            <span>Go to Services</span>
+            <svg viewBox="0 0 13 10" height="10px" width="15px">
+              <path d="M1,5 L11,5"></path>
+              <polyline points="8 1 12 5 8 9"></polyline>
+            </svg>
+          </button>
+        </div>
       </div>
     </div>
 
@@ -377,7 +403,14 @@
               <li><a href="mailto:lutfihermansah03@gmail.com"><h3><i class="bi bi-envelope-fill ms-2"></i></h3></a></li>
             </ul>
           </div>
-            <button type="button" class="btn btn-danger text-dark mb-3" data-bs-toggle="modal" data-bs-target="#trigrerEror"><i class="bi bi-file-earmark-person">&ensp;</i>Curiculum Vitae</button>
+
+            <button class="cta mb-5" data-bs-toggle="modal" data-bs-target="#trigrerEror">
+              <span>Show Sertificate</span>
+              <svg viewBox="0 0 13 10" height="10px" width="15px">
+                <path d="M1,5 L11,5"></path>
+                <polyline points="8 1 12 5 8 9"></polyline>
+              </svg>
+            </button>
       </div>
       <div class="col-md-2"></div>
     </div>
@@ -449,17 +482,52 @@
     <!-- content -->
     <div class="row mt-3">
       <div class="col-md-2"></div>
-      <div class="col-md-4" data-aos="fade-up" data-aos-duration="2000">
-        <div class="card ex-01">
-          <div class="card-body">
-            <p class="card-text">
-              I have completed a digital talent scholarship training through the <strong>Vocational School Graduate Academy (VSGA)</strong> academy program.</p>
-            <button type="button" class="btn btn-warning text-dark btn-sm" data-bs-toggle="modal" data-bs-target="#showSertif"><i class="bi bi-award">&ensp;</i>Show Sertificate</button>
+      <div class="col-md-4 mb-5" data-aos="fade-up" data-aos-duration="2000">
+        <div class="flip-card">
+          <div class="flip-card-inner">
+              <div class="flip-card-front">
+                  <p class="title mt-2">Digitalent Kominfo</p>
+                  <img src="media/digitalent.png" class="img-fluid m-auto rounded-circle" width="150px" alt="digitalent">
+              </div>
+              <div class="flip-card-back py-5 px-2">
+                  <p class="title">Junior Web Developer</p>
+                  <p>
+                    I have completed a digital talent scholarship training through the <strong>Vocational School Graduate Academy (VSGA)</strong> academy program.</p>
+                  
+                    <button class="cta mt-0" data-bs-toggle="modal" data-bs-target="#showSertif">
+                      <span>Show Sertificate</span>
+                      <svg viewBox="0 0 13 10" height="10px" width="15px">
+                        <path d="M1,5 L11,5"></path>
+                        <polyline points="8 1 12 5 8 9"></polyline>
+                      </svg>
+                    </button>
+              </div>
           </div>
         </div>
+
       </div>
       <div class="col-md-4" data-aos="fade-up" data-aos-duration="2000" data-aos-delay="300">
-        <div class="card ex-02">
+        <div class="flip-card">
+          <div class="flip-card-inner">
+              <div class="flip-card-front">
+                  <p class="title mt-2">Dicoding</p>
+                  <img src="media/dicoding.png" class="img-fluid m-auto rounded-circle" width="150px" alt="digitalent">
+              </div>
+              <div class="flip-card-back py-5 px-2">
+                  <p class="title">Junior Front-End Web</p>
+                  <p>
+                    I have completed dicoding training through the <strong>front-end web learning academy program for beginners.</strong> </p>
+                  
+                    <button class="cta mt-0" data-bs-toggle="modal" data-bs-target="#showSertif2">
+                      <span>Show Sertificate</span>
+                      <svg viewBox="0 0 13 10" height="10px" width="15px">
+                        <path d="M1,5 L11,5"></path>
+                        <polyline points="8 1 12 5 8 9"></polyline>
+                      </svg>
+                    </button>
+              </div>
+          </div>
+        <!-- <div class="card ex-02">
           <div class="card-body">
             <div class="row">
               <div class="col-md-6 text-center">
@@ -475,7 +543,7 @@
               I have completed dicoding training through the <strong>front-end web learning academy program for beginners.</strong> </p>
             <button type="button" class="btn btn-warning text-dark btn-sm" data-bs-toggle="modal" data-bs-target="#showSertif2"><i class="bi bi-award">&ensp;</i>Show Sertificate</button>
           </div>
-        </div>
+        </div> -->
       </div>
       <div class="col-md-2"></div>
     </div>
@@ -590,8 +658,8 @@
 
 
     <!-- DESIGN GRAPHIC -->
-    <h5 class="text-light mt-5" data-aos="fade-zoom-in" data-aos-easing="ease-in-back" data-aos-delay="400" data-aos-offset="0"><i class="bi bi-file-earmark-easel">&ensp;</i>Hobby</h5>
-    <div class="line2" data-aos="flip-left" data-aos-duration="1000" data-aos-delay="400" ></div>
+    <h3 class="text-center" data-aos="fade-zoom-in" data-aos-easing="ease-in-back" data-aos-delay="400" data-aos-offset="0">More activity</h3>
+    <!-- <div class="line2" data-aos="flip-left" data-aos-duration="1000" data-aos-delay="400" ></div> -->
     <div class="row p1 mt-3 pt-3" data-aos="fade-up" data-aos-duration="2000">
       <div class="col-md-4" data-aos="zoom-in" data-aos-duration="1000" data-aos-delay="300">
         <div class="zoom">
@@ -766,7 +834,7 @@
   <div class="container mb-3">
     <!-- judul -->
     <div class="row text-center mt-5">
-      <div class="col text-light pt-2">
+      <div class="col text-dark pt-2">
         <h3 data-aos="fade-zoom-in" data-aos-easing="ease-in-back" data-aos-delay="400" data-aos-offset="0">Start a project?</h3>
         <div class="line text-center mb-3" data-aos="flip-left" data-aos-duration="1000"></div>
         <p class="text-center descriptContact" data-aos="fade-zoom-in" data-aos-easing="ease-in-back" data-aos-delay="600">
