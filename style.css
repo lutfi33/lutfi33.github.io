@@ -4,6 +4,8 @@ body {
     font-family: 'Bree Serif', serif;
     overflow-x: hidden;
     scroll-behavior: smooth;
+    margin-left: 0px;
+    margin-right: 0px;
 
 }
 @media only screen and (max-width: 600px){
@@ -35,7 +37,7 @@ body {
     margin-bottom: 110px;
 }
 /* BUTTON */
-button:active{
+button:active, .navbar-toggler:focus, .navbar-toggler::before{
     border: none;
 }
 .btn-dark {
@@ -699,3 +701,272 @@ footer .socialMedia li .github:hover {
     color: white;
     transform: rotateY(180deg);
   }
+
+  /* social item */
+  .social {
+    margin: 0;
+    list-style: none;
+    padding-left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+  }
+  
+  .social .social-item {
+    margin: 0 30px;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .social .social-item .social-link {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #fff;
+    text-align: center;
+    transform: perspective(1000px) rotate(-30deg) skew(25deg)
+      translate(0, 0);
+    transition: all 0.4s ease;
+  }
+  
+  .social .social-item .social-link::before {
+    content: "";
+    position: absolute;
+    top: 5px;
+    left: -10px;
+    height: 100%;
+    width: 10px;
+    background: #b1b1b1;
+    transition: all 0.4s ease;
+    transform: rotate(0deg) skewY(-45deg);
+  }
+  
+  .social .social-item .social-link::after {
+    content: "";
+    position: absolute;
+    top: 40px;
+    left: -5px;
+    height: 10px;
+    width: 100%;
+    background: #b1b1b1;
+    transition: all 0.4s ease;
+    transform: rotate(0deg) skewX(-45deg);
+  }
+  
+  .social .social-item .social-link:hover {
+    transform: perspective(1000px) rotate(-30deg) skew(25deg) translate(5px, -5px);
+    box-shadow: -20px 20px 10px rgba(0, 0, 0, 0.5);
+  }
+  
+  .social .social-item:nth-child(1) a {
+    color: #3b5999;
+  }
+  
+  .social .social-item:nth-child(1):hover a {
+    background: #3b5999;
+  }
+  
+  .social .social-item:nth-child(1):hover a::before {
+    background: #3b5999;
+  }
+  
+  .social .social-item:nth-child(1):hover a::after {
+    background: #3b5999;
+  }
+  
+  .social .social-item:nth-child(2) a {
+    color: #55acee;
+  }
+  
+  .social .social-item:nth-child(2):hover a {
+    background: #55acee;
+  }
+  
+  .social .social-item:nth-child(2):hover a::before {
+    background: #55acee;
+  }
+  
+  .social .social-item:nth-child(2):hover a::after {
+    background: #55acee;
+  }
+  
+  .social .social-item:nth-child(3) a {
+    color: #dd4b39;
+  }
+  
+  .social .social-item:nth-child(3):hover a {
+    background: #dd4b39;
+  }
+  
+  .social .social-item:nth-child(3):hover a::before {
+    background: #dd4b39;
+  }
+  
+  .social .social-item:nth-child(3):hover a::after {
+    background: #dd4b39;
+  }
+  
+  .social .social-item:nth-child(4) a {
+    color: #e4405f;
+  }
+  
+  .social .social-item:nth-child(4):hover a {
+    background: #e4405f;
+  }
+  
+  .social .social-item:nth-child(4):hover a::before {
+    background: #e4405f;
+  }
+  
+  .social .social-item:nth-child(4):hover a::after {
+    background: #e4405f;
+  }
+  
+  .social .social-item .social-link:hover {
+    color: #ffffff;
+  }
+  
+  /* card 3 */
+  .card-03 {
+    --bg: #f7f7f8;
+    --hover-bg: #152431;
+    --hover-text: #ffffff;
+    width: auto;
+    text-align: center;
+    background: var(--bg);
+    padding: 1.5em;
+    padding-block: 1.8em;
+    border-radius: 5px;
+    position: relative;
+    overflow: hidden;
+    transition: .3s cubic-bezier(.6,.4,0,1),transform .15s ease;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1em;
+  }
+  
+
+  
+  .card-03 > :not(span) {
+    transition: .3s cubic-bezier(.6,.4,0,1);
+  }
+  
+  .card-03 > strong {
+    display: block;
+    font-size: 15px;
+    letter-spacing: -.035em;
+    color: #000C17;
+  }
+  
+  .card-03 span {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--hover-text);
+    border-radius: 5px;
+    font-weight: bold;
+    top: 100%;
+    transition: all .3s cubic-bezier(.6,.4,0,1);
+  }
+  
+  .card-03:hover span {
+    top: 0;
+    font-size: 1.2em;
+  }
+  
+  .card-03:hover {
+    background: var(--hover-bg);
+  }
+  
+  .card-03:hover>div,.card-03:hover>strong {
+    opacity: 0;
+  }
+
+  /* card 4 */
+  .card-4 {
+    width: fit-content;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 30px 0px;
+    gap: 20px;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.055);
+  }
+  
+  /* for all social containers*/
+  .socialContainer {
+    width: 52px;
+    height: 52px;
+    background-color: rgb(44, 44, 44);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    transition-duration: .3s;
+    border-radius: 12px;
+  }
+  /* instagram*/
+  .containerOne:hover {
+    background-color: #d62976;
+    transition-duration: .3s;
+  }
+  /* twitter*/
+  .containerTwo:hover {
+    background-color: #00acee;
+    transition-duration: .3s;
+  }
+  /* linkdin*/
+  .containerThree:hover {
+    background-color: #0072b1;
+    transition-duration: .3s;
+  }
+  /* Whatsapp*/
+  .containerFour:hover {
+    background-color: #128C7E;
+    transition-duration: .3s;
+  }
+  
+  .socialContainer:active {
+    transform: scale(0.9);
+    transition-duration: .3s;
+  }
+  
+  .socialSvg {
+    width: 17px;
+  }
+  
+  .socialSvg path {
+    fill: rgb(255, 255, 255);
+  }
+  
+  .socialContainer:hover .socialSvg {
+    animation: slide-in-top 0.3s both;
+  }
+  
+  @keyframes slide-in-top {
+    0% {
+      transform: translateY(-50px);
+      opacity: 0;
+    }
+  
+    100% {
+      transform: translateY(0);
+      opacity: 1;
+    }
+  }
+  
+  
